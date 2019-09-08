@@ -1,0 +1,23 @@
+{
+  "name": "phyllis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "elm make App/Main.elm --output=App/app.js && touch API/index.ts",
+    "watch": "chokidar \"./App/*.(elm|css|html)\" -c 'npm run build'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^2.0.0",
+    "elm": "^0.19.0-no-deps",
+    "elm-format": "^0.8.2",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.42",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {}
+}

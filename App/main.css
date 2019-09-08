@@ -1,0 +1,84 @@
+body {
+  --custom-red: #ed4337;
+  --custom-white: #fcfcfc;
+  --custom-black: #2b2b2b;
+  font-family: monospace;
+  background-color: var(--custom-black);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 1rem 1.5rem;
+  border: 0;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.btn .icon {
+  align-self: center;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.icon-small svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-round {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+.icon-round svg {
+  align-self: center;
+}
+
+.bg-red {
+  background-color: var(--custom-red);
+}
+
+.text-red {
+  color: var(--custom-red);
+}
+
+.text-white {
+  color: var(--custom-white);
+}
+
+.label {
+  font-size: 1.2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
